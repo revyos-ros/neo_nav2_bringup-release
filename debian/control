@@ -1,0 +1,12 @@
+Source: ros-humble-neo-nav2-bringup
+Section: misc
+Priority: optional
+Maintainer: Pradheep Padmanabhan <padmanabhan@neobotix.de>
+Build-Depends: debhelper (>= 9.0.0), ros-humble-ament-cmake, ros-humble-nav2-common, ros-humble-navigation2, ros-humble-slam-toolbox, ros-humble-ros-workspace
+Homepage: 
+Standards-Version: 3.9.2
+
+Package: ros-humble-neo-nav2-bringup
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, ros-humble-nav2-common, ros-humble-navigation2, ros-humble-slam-toolbox, ros-humble-ros-workspace
+Description: ROS-2 navigation bringup packages for neobotix robots
