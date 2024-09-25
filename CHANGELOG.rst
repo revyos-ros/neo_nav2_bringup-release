@@ -2,7 +2,7 @@
 Changelog for package neo_nav2_bringup
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-1.0.1 (2024-07-17)
+1.1.1 (2024-09-25)
 ------------------
 * updating package.xml
 * Create LICENSE
@@ -10,13 +10,12 @@ Changelog for package neo_nav2_bringup
 * updating the depend tags
 * updating package.xml
 * updating launch (`#23 <https://github.com/neobotix/neo_nav2_bringup/issues/23>`_)
-* multi robot rviz update
+* now can set relative path for the behavior trees
+* update
 * rviz config update
-* update for multi robot rviz
-* Humble develop (`#18 <https://github.com/neobotix/neo_nav2_bringup/issues/18>`_)
-  * map_server is used standalone for multi_robot navigation
-  * fixes to the default config
-  * updating the package description
+* updating the package description
+* fixes to the default config
+* map_server is used standalone for multi_robot navigation
 * Humble update (`#13 <https://github.com/neobotix/neo_nav2_bringup/issues/13>`_)
   * minor fixes
   * update readme

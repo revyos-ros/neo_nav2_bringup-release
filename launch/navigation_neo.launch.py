@@ -21,8 +21,7 @@ from launch.actions import DeclareLaunchArgument, GroupAction, SetEnvironmentVar
 from launch.conditions import IfCondition
 from launch.substitutions import LaunchConfiguration, PythonExpression
 from launch_ros.actions import Node
-from launch_ros.actions import LoadComposableNodes
-from launch_ros.descriptions import ComposableNode
+from launch_ros.descriptions import ParameterFile
 from nav2_common.launch import RewrittenYaml
 
 def generate_launch_description():
@@ -48,11 +47,13 @@ def generate_launch_description():
         'use_sim_time': use_sim_time,
         'autostart': autostart}
 
-    configured_params = RewrittenYaml(
+    configured_params = ParameterFile(
+        RewrittenYaml(
             source_file=params_file,
             root_key=namespace,
             param_rewrites=param_substitutions,
-            convert_types=True)
+            convert_types=True),
+        allow_substs=True)
 
     declare_namespace_cmd = DeclareLaunchArgument(
         'namespace',
